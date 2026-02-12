@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Licence GEI - Électronique & Électrotechnique</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px #007BFF;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Formulaire</h1>
+        <p>Licence Génie Électrique et Informatique<br>
+        Option Électronique & Électrotechnique</p>
+
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label>Nom</label>
+                <input type="text" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label>Prénom</label>
+                <input type="text" name="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label>Adresse Mail</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Numéro de Téléphone</label>
+                <input type="tel" name="telephone" required>
+            </div>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+        <div class="footer">
+            © 2026 - GEI option  Électronique & Électrotechnique
+        </div>
+
+    </div>
+
+</body>
+</html>
